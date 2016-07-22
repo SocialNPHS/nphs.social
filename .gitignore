@@ -1,0 +1,9 @@
+# OS X
+*.DS_Store
+
+# Sass
+.sass-cache/
+*.css.map
+
+# 3rd party
+particleground.min.js

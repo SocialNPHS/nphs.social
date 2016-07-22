@@ -1,0 +1,88 @@
+@import colors
+$white: #fff
+
+*
+  box-sizing: border-box
+
+// Normal stuff
+
+body
+  color: $white
+  font-family: 'Raleway', sans-serif
+  font-size: 1.5vw
+  font-weight: 400
+
+  margin: 0
+
+  // Fallback - average of the two gradient colors
+  background: mix($gradient-a, $gradient-b)
+  background: linear-gradient($gradient-a, $gradient-b)
+  background-attachment: fixed
+
+  -webkit-font-smoothing: antialiased
+
+h1
+  font-size: 7vw
+  font-weight: 100
+  // text-transform: uppercase
+  margin: 0
+  text-align: center
+
+h2
+  font-size: 2vw
+  font-weight: 400
+  text-align: center
+
+a
+  color: $white
+  text-decoration: none
+  border-bottom: 1px solid $white
+  padding-bottom: 1px
+
+.foot
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  padding: 1%
+  text-align: center
+  background-color: transparentize($white, .8)
+
+.full-width
+  width: 100%
+
+#one
+  height: 100vh
+  padding: 10% 10% 0
+  position: fixed
+  top: 0
+  left: 0
+
+#particles
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+
+// Styles for small screens (namely portrait iPhones).
+   These styles adjust font sizes, and re-style some other things.
+
+@media (max-width: 420px)
+  h1
+    font-size: 12.5vw
+
+  h2
+    font-size: 7vw
+
+  body
+    font-size: 5vw
+
+  #one
+    padding-top: 20%
+
+  .buttons
+    button,
+    a
+      font-size: 5vw
+      padding: 6px
