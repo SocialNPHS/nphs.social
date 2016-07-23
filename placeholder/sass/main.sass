@@ -14,11 +14,6 @@ body
 
   margin: 0
 
-  // Fallback - average of the two gradient colors
-  background: mix($gradient-a, $gradient-b)
-  background: linear-gradient($gradient-a, $gradient-b)
-  background-attachment: fixed
-
   -webkit-font-smoothing: antialiased
 
 h1
@@ -75,6 +70,10 @@ a
   position: fixed
   top: 0
   left: 0
+  // Fallback - average of the two gradient colors
+  background: mix($gradient-a, $gradient-b)
+  background: linear-gradient($gradient-a, $gradient-b)
+  background-attachment: fixed
 
 // Styles for small screens (namely portrait iPhones).
    These styles adjust font sizes, and re-style some other things.
