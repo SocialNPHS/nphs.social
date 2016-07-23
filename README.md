@@ -1,2 +1,2 @@
-# [nphs.social](http://nphs.social)
+# [nphs.social](https://nphs.social/)
 The SocialNPHS front end

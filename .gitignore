@@ -1,6 +1,9 @@
 # OS X
 *.DS_Store
 
+# SSL
+.well-known
+
 # Sass
 .sass-cache/
 *.css.map
