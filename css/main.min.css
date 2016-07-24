@@ -1,2 +1,2 @@
-body{background-color:#282C34}#timeline-main{width:50%;height:50%}
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}body{position:fixed;padding:0;margin:0}#flex-container{width:100vw;height:100vh;display:flex}#sidenav button{border:none;border-radius:none;padding:7px;color:#fff;font-size:1.1em}#content-main{flex:1}#timeline-main{height:100vh;overflow:scroll}
 /*# sourceMappingURL=main.min.css.map */

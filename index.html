@@ -5,14 +5,38 @@
   <meta charset="utf-8">
   <title>SocialNPHS</title>
   <link rel="stylesheet" href="css/main.min.css">
+  
+  <!-- Materialize's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body class="blue-grey darken-4">
 
-  <div id="timeline-main"></div>
+  <div id="flex-container">
+  
+    <!-- Side navigation bar -->
+    <div id="sidenav" class="blue-grey darken-3">
+      <button><i class="material-icons">home</i></button>
+    </div>
+    <!-- Content area -->
+    <div id="content-main">
+      <div id="timeline-main"></div>
+    </div>
 
+  </div>
+  
+  <!-- THIRD PARTY JS -->
+
+  <!-- Materialize's JS (which depends on jQuery) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <!-- Twitter widgets library -->
   <script type="text/javascript" src="js/twitter-widgets.js"></script>
+
+  <!-- MY JS -->
+
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>
