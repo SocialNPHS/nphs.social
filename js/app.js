@@ -1,1 +1,1 @@
-var app = angular.module("SocialNPHS", []);
+var app = angular.module("SocialNPHS", ["ngMaterial"]);
