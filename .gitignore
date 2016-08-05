@@ -9,7 +9,6 @@
 
 # Sass
 .sass-cache/
-*.css.map
 
 # 3rd party
 particleground.min.js
