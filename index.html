@@ -20,14 +20,16 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body ng-app="SocialNPHS" class="md-background">
+<body ng-app="SocialNPHS">
   <div layout="row" md-colors="{background: 'background'}">
-    <div layout="column" class="md-whiteframe-4dp" md-colors="{color: 'default'}">
+    <div layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
       <md-button class="md-icon-button"><i class="material-icons">home</i></md-button>
     </div>
     <!-- Content area -->
     <div id="content-main">
-      <div id="timeline-main"></div>
+      <div id="wrapper">
+        <div id="timeline-main"></div>
+      </div>
     </div>
   </div>
 

@@ -9,7 +9,7 @@ twttr.ready(function() {
     document.getElementById("timeline-main"),
     {
       theme: "dark",
-      chrome: "noheader transparent"
+      chrome: "transparent noheader nofooter"
     }
   );
 });
