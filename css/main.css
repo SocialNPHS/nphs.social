@@ -1,2 +1,2 @@
-body{position:fixed;left:0;top:0;width:100vw;height:100vh}h1{margin-top:0}#content-main{height:100%;overflow:scroll;padding:3%}
+body{position:fixed;left:0;top:0;width:100vw;height:100vh}h1{margin-top:0}.center-text{text-align:center}.center-block-x{left:50%;transform:translateX(-50%)}.center-block-y{left:50%;top:50%;transform:translate(-50%, -50%)}#content-main{height:100%;overflow:scroll;padding:3%}
 /*# sourceMappingURL=main.css.map */
