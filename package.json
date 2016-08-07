@@ -11,10 +11,7 @@
   },
 
   "scripts": {
-    "serve": "lite-server",
-    "watch": "sass --watch sass:css --style=compressed",
-
-    "start": "(npm run serve && npm run watch) > log.txt",
-    "stop": "rm -f log.txt"
+    "start": "bash run.sh",
+    "stop": "bash stop.sh"
   }
 }

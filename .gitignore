@@ -16,5 +16,6 @@ particleground.min.js
 # npm
 node_modules
 
-# Debug log
+# Start / stop script things
 log.txt
+.pids.txt
