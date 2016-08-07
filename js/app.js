@@ -14,11 +14,13 @@ app.config(function($mdThemingProvider) {
   $routeProvider
     .when("/", {
       // The home page. This will display graphs in cards
-      templateUrl: "pages/home.html"
+      templateUrl: "pages/home.html",
+      controller: "HomeCtrl"
     })
     .when("/timeline", {
       // The timeline page. This displays a list of tweets from New Paltz students.
-      templateUrl: "pages/timeline.html"
+      templateUrl: "pages/timeline.html",
+      controller: "TimelineCtrl"
     })
     .otherwise("/");
 
