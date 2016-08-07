@@ -12,3 +12,9 @@
 
 # 3rd party
 particleground.min.js
+
+# npm
+node_modules
+
+# Debug log
+log.txt

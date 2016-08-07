@@ -1,0 +1,20 @@
+{
+  "name": "nphs.social",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/SocialNPHS/nphs.social.git"
+  },
+  "license": "MIT",
+
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  },
+
+  "scripts": {
+    "serve": "lite-server",
+    "watch": "sass --watch sass:css --style=compressed",
+
+    "start": "(npm run serve && npm run watch) > log.txt",
+    "stop": "rm -f log.txt"
+  }
+}
