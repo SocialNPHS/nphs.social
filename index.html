@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>SocialNPHS</title>
+  <base href="/">
+
   <!-- Material icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Angular -->
@@ -23,18 +25,13 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body ng-app="SocialNPHS">
-  <div layout="row" md-colors="{background: 'background'}">
-    <div layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
-      <md-button class="md-icon-button"><i class="material-icons">home</i></md-button>
-    </div>
-    <!-- Content area -->
-    <div id="content-main">
-      <div id="wrapper">
-        <div id="timeline-main"></div>
-      </div>
-    </div>
+<body ng-app="SocialNPHS" layout="row" md-colors="{background: 'background'}">
+  <div id="sidebar" layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
+    <md-button class="md-icon-button"><i class="material-icons">home</i></md-button>
+    <md-button class="md-icon-button"><i class="material-icons">list</i></md-button>
   </div>
+  <!-- Content area -->
+  <div id="content-main"></div>
 
   <!-- Twitter widgets library -->
   <script type="text/javascript" src="js/twitter-widgets.js"></script>
