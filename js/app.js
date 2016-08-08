@@ -22,6 +22,9 @@ app.config(function($mdThemingProvider) {
       templateUrl: "pages/timeline.html",
       controller: "TimelineCtrl"
     })
+    .when("/about", {
+      templateUrl: "pages/about.html"
+    })
     .otherwise("/");
 
     $locationProvider.html5Mode(true);
