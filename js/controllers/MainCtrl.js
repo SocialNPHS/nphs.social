@@ -5,17 +5,20 @@ app.controller(
       {
         name: "Home",
         icon: "home",
-        href: "/"
+        href: "/",
+        selected: true
       },
       {
         name: "Timeline",
         icon: "list",
-        href: "/timeline"
+        href: "/timeline",
+        selected: false
       },
       {
         name: "About",
         icon: "person",
-        href: "/about"
+        href: "/about",
+        selected: false
       }
     ];
   }

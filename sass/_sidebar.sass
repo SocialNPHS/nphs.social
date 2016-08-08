@@ -1,0 +1,8 @@
+$selected-base-color: rgba(158, 158, 158, 1)
+
+.selected-tab
+  background-color: transparentize($selected-base-color, .6)
+
+  &:hover
+    &:not([disabled])
+      background-color: transparentize($selected-base-color, .4)

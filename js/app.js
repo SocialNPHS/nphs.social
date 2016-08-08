@@ -31,6 +31,7 @@ app.config(function($mdThemingProvider) {
 })
 .run(function($rootScope) {
   $rootScope.$on("$routeChangeSuccess", function(e, current, pre) {
+    // Navigation events
     var path = current.$$route.originalPath;
   });
 });
