@@ -18,7 +18,6 @@ function _createTimeline() {
 app.controller(
   "TimelineCtrl", function($scope) {
     // Create the timeline, waiting for widgets.js to load if it hasn't yet.
-    console.log("Initializing timeline");
     if (twttr_ready) {
       _createTimeline();
     } else {
