@@ -28,4 +28,9 @@ app.config(function($mdThemingProvider) {
     .otherwise("/");
 
     $locationProvider.html5Mode(true);
+})
+.run(function($rootScope) {
+  $rootScope.$on("$routeChangeSuccess", function(e, current, pre) {
+    var path = current.$$route.originalPath;
+  });
 });

@@ -35,10 +35,10 @@
 
 <body ng-app="SocialNPHS" ng-controller="MainCtrl" layout="row" md-colors="{background: 'background'}">
   <div id="sidebar" layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
-    <md-button ng-repeat="item in navItems" href="{{item.href}}" class="md-icon-button">
+    <md-button ng-repeat="item in navItems" href="{{item.href}}" class="icon-container">
       <md-icon class="material-icons">{{item.icon}}</md-icon>
       <md-tooltip md-direction="right">{{item.name}}</md-tooltip>
-    </md-button>
+    </div>
   </div>
   <!-- Content area -->
   <div id="content-main" flex ng-view></div>
