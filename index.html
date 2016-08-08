@@ -35,9 +35,15 @@
 
 <body ng-app="SocialNPHS" layout="row" md-colors="{background: 'background'}">
   <div id="sidebar" layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
-    <md-button href="/" class="md-icon-button"><i class="material-icons">home</i></md-button>
-    <md-button href="/timeline" class="md-icon-button"><i class="material-icons">list</i></md-button>
-    <md-button href="/about" class="md-icon-button"><i class="material-icons">person</i></md-button>
+    <md-button href="/" class="md-icon-button">
+      <md-icon class="material-icons">home</md-icon>
+    </md-button>
+    <md-button href="/timeline" class="md-icon-button">
+      <md-icon class="material-icons">list</md-icon>
+    </md-button>
+    <md-button href="/about" class="md-icon-button">
+      <md-icon class="material-icons">person</md-icon>
+    </md-button>
   </div>
   <!-- Content area -->
   <div id="content-main" flex ng-view></div>
