@@ -33,19 +33,11 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body ng-app="SocialNPHS" layout="row" md-colors="{background: 'background'}">
+<body ng-app="SocialNPHS" ng-controller="MainCtrl" layout="row" md-colors="{background: 'background'}">
   <div id="sidebar" layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
-    <md-button href="/" class="md-icon-button">
-      <md-icon class="material-icons">home</md-icon>
-      <md-tooltip md-direction="right">Home</md-tooltip>
-    </md-button>
-    <md-button href="/timeline" class="md-icon-button">
-      <md-icon class="material-icons">list</md-icon>
-      <md-tooltip md-direction="right">Timeline</md-tooltip>
-    </md-button>
-    <md-button href="/about" class="md-icon-button">
-      <md-icon class="material-icons">person</md-icon>
-      <md-tooltip md-direction="right">About</md-tooltip>
+    <md-button ng-repeat="item in navItems" href="{{item.href}}" class="md-icon-button">
+      <md-icon class="material-icons">{{item.icon}}</md-icon>
+      <md-tooltip md-direction="right">{{item.name}}</md-tooltip>
     </md-button>
   </div>
   <!-- Content area -->
@@ -58,6 +50,7 @@
   <script type="text/javascript" src="js/main.js"></script>
 
   <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
   <script type="text/javascript" src="js/controllers/HomeCtrl.js"></script>
   <script type="text/javascript" src="js/controllers/TimelineCtrl.js"></script>
 </body>
