@@ -1,7 +1,7 @@
 /* Controller for the whole app, the stuff encompassing the individual pages */
 app.controller(
-  "MainCtrl", function($scope) {
-    $scope.navItems = [
+  "MainCtrl", function($rootScope, $scope) {
+    $rootScope.navItems = [
       {
         name: "Home",
         icon: "home",
