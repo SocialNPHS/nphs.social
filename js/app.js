@@ -56,9 +56,10 @@ app.config(function($mdThemingProvider) {
 // Listen to navigation events
 .run(function($rootScope) {
   $rootScope.$on("$routeChangeSuccess", function(e, current, pre) {
-    console.log("Navigating to " + path);
-    // Highlight the active tab when we switch pages
     var path = current.$$route.originalPath;
+    console.log("Navigating to " + path);
+
+    // Highlight the active tab when we switch pages
     for (var i = 0; i < $rootScope.navPages.length; i++) {
       if ($rootScope.navPages[i].href === path) {
         $rootScope.navPages[i].selected = true;
