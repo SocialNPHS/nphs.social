@@ -35,7 +35,7 @@
 
 <body ng-app="SocialNPHS" ng-controller="MainCtrl" layout="row" md-colors="{background: 'background'}">
   <div id="sidebar" layout="column" class="md-whiteframe-4dp" md-colors="{background: 'grey-800'}">
-    <md-button ng-repeat="item in navItems" href="{{item.href}}" class="icon-container" ng-class="{'selected-tab': item.selected}">
+    <md-button ng-repeat="item in navPages" href="{{item.href}}" class="icon-container" ng-class="{'selected-tab': item.selected}">
       <md-icon class="material-icons">{{item.icon}}</md-icon>
       <md-tooltip md-direction="right">{{item.name}}</md-tooltip>
     </div>
