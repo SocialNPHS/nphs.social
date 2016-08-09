@@ -36,3 +36,24 @@
 
     &.ng-leave-active
       top: -100vh
+
+  &.slide-down
+    position: absolute
+    display: block
+
+    &.ng-enter
+      transition: bottom 1s ease
+      bottom: 100vh
+      z-index: 4444
+
+    &.ng-enter-active
+      bottom: 0
+
+
+    &.ng-leave
+      transition: bottom 1s ease
+      bottom: 0
+      z-index: 3333
+
+    &.ng-leave-active
+      bottom: -100vh
