@@ -7,7 +7,9 @@
 
 #content-main
   height: 100%
-  width: 100%
+  // Account for the width of the sidebar. Yes, magic numbers are evil, but I
+  // can't figure out a better way.
+  width: calc(100% - 48px)
   overflow: scroll
   padding: 5%
 
