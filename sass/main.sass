@@ -7,5 +7,29 @@
 
 #content-main
   height: 100%
+  width: 100%
   overflow: scroll
   padding: 5%
+
+  // Animation
+
+  &.slide-up
+    position: absolute
+    display: block
+
+    &.ng-enter
+      transition: top 1s ease
+      top: 100vh
+      z-index: 4444
+
+    &.ng-enter-active
+      top: 0
+
+
+    &.ng-leave
+      transition: top 1s ease
+      top: 0
+      z-index: 3333
+
+    &.ng-leave-active
+      top: -100vh
