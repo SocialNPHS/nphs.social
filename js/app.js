@@ -46,15 +46,18 @@ app.config(function($mdThemingProvider) {
   // Use the html5 history API so that hashes aren't necessary in URLs
   $locationProvider.html5Mode(true);
 })
-// Listen to navigation events
+
+// Run far away from global variables as soon as we can because this is Angular
 .run(function($rootScope) {
-  // Run far away from global variables as soon as we can because this is
-  // Angular
   $rootScope.navPages = navPages;
   delete window.navPages;
+})
 
+// Listen to navigation events
+.run(function($rootScope) {
   $rootScope.$on("$routeChangeSuccess", function(e, current, pre) {
-    // Navigation events
+    console.log("Navigating to " + path);
+    // Highlight the active tab when we switch pages
     var path = current.$$route.originalPath;
     for (var i = 0; i < $rootScope.navPages.length; i++) {
       if ($rootScope.navPages[i].href === path) {
@@ -63,6 +66,5 @@ app.config(function($mdThemingProvider) {
         $rootScope.navPages[i].selected = false;
       }
     }
-    console.log("Navigating to " + path);
   });
 });
