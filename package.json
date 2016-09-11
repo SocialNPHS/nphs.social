@@ -1,17 +1,19 @@
 {
   "name": "nphs.social",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/SocialNPHS/nphs.social.git"
+    "type": "git",
+    "url": "https://github.com/SocialNPHS/nphs.social.git"
   },
   "license": "MIT",
-
   "devDependencies": {
-    "lite-server": "^2.2.0"
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
   },
-
   "scripts": {
-    "start": "bash run.sh",
-    "stop": "bash stop.sh"
+    "start": "gulp"
   }
 }

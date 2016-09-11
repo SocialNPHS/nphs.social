@@ -15,13 +15,11 @@ function _createTimeline() {
 }
 
 // Controller for the front page of the app
-app.controller(
-  "TimelineCtrl", function($scope) {
-    // Create the timeline, waiting for widgets.js to load if it hasn't yet.
-    if (twttr_ready) {
-      _createTimeline();
-    } else {
-      twttr.ready(_createTimeline);
-    }
+app.controller("TimelineCtrl", function($scope) {
+  // Create the timeline, waiting for widgets.js to load if it hasn't yet.
+  if (twttr_ready) {
+    _createTimeline();
+  } else {
+    twttr.ready(_createTimeline);
   }
-);
+});
